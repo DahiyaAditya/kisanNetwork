@@ -1,13 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
+  padding: 0;
+  background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CSS */
+.button-16 {
+  background-color: #f8fbff;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 20px;
+  height: 51px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.button-16:hover {
+  border-color: #0e0e0f;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #040404;
+}
+
+.button-16:focus {
+  border-color: #91ee9f;
+  outline: none;
+}
+.header{
+  width:100%;
+  background-color: rgb(82, 79, 79);
+  min-height: 10vh;
+  /* min-width: 100vh; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.header-content{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  padding: 15px;
+}
+.header-name{
+  color: rgb(101, 238, 101);
+  line-height: 19px;
+  padding-top: 5px;
+}
+.header-name span{
+  color: #3c2727fa;
+}
+.header-name span:nth-child(3){
+  font-size: 15px;
+  color: #000000;
+}
+.Detail-main{
+  width: 400px;
+  margin: 50px;
+  background-color: #1a0202;
+  margin-top: 110px;
+  height: 300px;
+  overflow-y: auto;
+}
+.Detail-content{
+ 
+ color: white;
+ padding: 30PX;
+ line-height: 30PX;
+}
+.Detail-content h2{
+  display: grid;
+ place-items: CENTER;
+color: yellow;
+margin: 10px;
+font-size: 35px;
+}
+.Detail-content p{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.Detail-button{
+  display: grid;
+  place-items: center;
+}
+.detail-main{
+  background-color: transparent;
+  display:flex;
+  flex-wrap: wrap;
 }
