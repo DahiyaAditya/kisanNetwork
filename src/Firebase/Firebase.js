@@ -17,5 +17,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-export const kisanData = collection(db,"kisan" )
+export const kisanDetails = collection(db,"kisan" )
+export const verifiedDatas = collection(db,"verified" )
 export default app;
